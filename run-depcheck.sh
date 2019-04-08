@@ -1,0 +1,1 @@
+docker run --rm --volume $(pwd):/src --volume /home/cloud_user/owdata:/usr/share/dependency-check/data --volume $(pwd)/owreport:/report owasp/dependency-check --scan /src --format "ALL" --project "My OWASP Dependency Check Project" --out /repor
